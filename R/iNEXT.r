@@ -46,6 +46,7 @@ EstiBootComm.Ind <- function(Spec)
   if(f0.hat==0){
     w <- 0
     if(sum(Spec>0)==1){
+      browser()
       warning("This site has only one species. Estimation is not robust.")
     }
   }else{
@@ -85,6 +86,7 @@ EstiBootComm.Sam <- function(Spec)
   if(Q0.hat==0){
     w <- 0
     if(sum(Spec>0)==1){
+      browser()
       warning("This site has only one species. Estimation is not robust.")
     }
   }else{
